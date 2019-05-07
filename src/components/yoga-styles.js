@@ -27,7 +27,7 @@ const yogaStyles = {
         name: "Yin Yoga",
         description: "Yin yoga is a meditative practice that allows your body to become comfortable in a pose without doing any work (strength). It is also called Taoist yoga, and focuses on lengthening the connective tissues within the body",
         benefits: "60% spiritual 40% physical",
-        image: "/images/yin-yoga.jpeg"
+        image: "/images/yin-yoga.jpg"
     }
 }
 
