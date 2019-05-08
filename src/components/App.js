@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style.css';
 import Header from './Header';
 import YogaList from './Yoga-list';
 import yogaStyles from './yoga-styles';
