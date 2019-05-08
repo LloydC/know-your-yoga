@@ -9,7 +9,7 @@ const Login = () => {
             <br></br>
             <button>Login</button>
             <br></br>
-            <a href="/"> Sign up here</a>
+            <a href="/signup"> Sign up here</a>
         </div>
     );
 };
