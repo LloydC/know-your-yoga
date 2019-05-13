@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import fire from './firebase';
 
 class SignInForm extends Component {
     constructor() {
@@ -12,6 +13,7 @@ class SignInForm extends Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.login = this.login.bind(this)
     }
 
     handleChange(e) {
@@ -27,6 +29,13 @@ class SignInForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log(`Form data ${this.state}`);
+    }
+
+    login(e){
+      e.preventDefault();
+      fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+      .then( u => console.log(u))
+      .catch(err => console.error(err))
     }
 
     render() {

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import fire from './firebase';
 
 class SignUpForm extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             email: '',
@@ -14,6 +15,7 @@ class SignUpForm extends Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.signup = this.signup.bind(this);
     }
 
     handleChange(e) {
@@ -29,6 +31,13 @@ class SignUpForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log(`Form data ${this.state}`);
+    }
+
+    signup(e){
+      e.preventDefault();
+      fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+      .then( u => console.log(u))
+      .catch(err => console.error(err))
     }
 
     render() {
@@ -53,7 +62,7 @@ class SignUpForm extends Component {
                 </label>
               </div>
               <div className="FormField">
-                  <button className="FormField__Button mr-20">Sign Up</button> <Link to="/sign-in" className="FormField__Link">I'm already member</Link>
+                  <button onClick={this.signup} className="FormField__Button mr-20">Sign Up</button> <Link to="/sign-in" className="FormField__Link">I'm already member</Link>
               </div>
             </form>
           </div>
