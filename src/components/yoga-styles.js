@@ -28,6 +28,12 @@ const yogaStyles = {
         description: "Yin yoga is a meditative practice that allows your body to become comfortable in a pose without doing any work (strength). It is also called Taoist yoga, and focuses on lengthening the connective tissues within the body",
         benefits: "60% spiritual 40% physical",
         image: "/images/yin-yoga.jpg"
+    },
+    yoga6: {
+        name: "Nada Yoga",
+        description: "It is based on sound. Divide the music into two categories. the internal or anahata and the external or ahata. Through breathing and the use of sounds, the yogi is able to hear his own anahata.",
+        benefits: "100% spiritual",
+        image: "/images/nada-yoga.jpg"
     }
 }
 

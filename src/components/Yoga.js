@@ -6,7 +6,7 @@ class Yoga extends React.Component {
         return (
             <div className="yoga">
                 <h1>{name}</h1>
-                <img src={image} alt="yoga pic" width="150px" height="150px"></img>
+                <img src={image} alt="yoga pic" width="100px" height="100px"></img>
                 <br></br>
                 <span>{benefits}</span>
                 <p>{description}</p>
