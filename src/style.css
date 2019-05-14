@@ -72,17 +72,17 @@ code {
   }
 }
 /*Form Code */
-.App {
+.App, .Profile {
   height: 100vh;
   display: flex;
   color: white;
 }
 
-.App__Aside {
+.App__Aside, .Profile_Yoga_list {
   width: 50%;
 }
 
-.App__Form {
+.App__Form, .Profile_Side {
   width: 50%;
   background-color: #2E4158;
   padding: 25px 40px;
