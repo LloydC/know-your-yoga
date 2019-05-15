@@ -41,8 +41,6 @@ code {
   display: flex;
 }
 
-
-
 .yogalist {
   height: 100%;
   display: flex;
@@ -58,9 +56,15 @@ code {
 .yoga {
   width: 125px;
   height: 150px;
-  /* border: 2px solid black; */
   overflow: scroll;
   text-align: center
+}
+.yoga-highlight{
+  width:400px;
+  height:550px;
+  background:gray;
+  text-align:left;
+  position:fixed;
 }
 
 .yoga h1 {

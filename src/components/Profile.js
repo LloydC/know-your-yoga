@@ -11,7 +11,11 @@ class Profile extends Component {
             yoga_list: yogaStyles,
         }
         this.logout = this.logout.bind(this)
+        this.expand = this.expand.bind(this);
         
+    }
+    expand(e){
+      
     }
 
     logout(){
@@ -36,7 +40,7 @@ class Profile extends Component {
                         <h1>Know Your Yoga</h1>
                         <ul className="yogalist">                    
                             {Object.keys(this.state.yoga_list).map(key => 
-                                <Yoga key={key} index={key} details={this.state.yoga_list[key]}/>
+                                <Yoga key={key} index={key} details={this.state.yoga_list[key]} />
                             )}
                         </ul>
                 </header>

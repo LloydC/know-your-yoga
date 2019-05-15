@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { HashRouter as Router} from 'react-router-dom';
+import React, {Component} from 'react';
+import {HashRouter as Router} from 'react-router-dom';
 import Profile from './Profile';
 import Home from './Home';
 import fire from './firebase';
@@ -32,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        {this.state.user ? <Profile/> : <Home/>}
+        {(this.state.user !== null) ? <Profile/> : <Home/>}
       </Router>
     );
   }
