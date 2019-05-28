@@ -48,9 +48,6 @@ code {
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: scroll;
-  /* flex-direction: column;
-  align-items: center; */
-  
 }
 
 .yoga {
