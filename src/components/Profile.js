@@ -48,6 +48,8 @@ class Profile extends Component {
                 <div className="Profile_Side">
                     <h1>Welcome to your profile {email}</h1>
                     <button onClick={this.logout} className="PageSwitcher__Item">Logout</button>
+                    <br/>
+                    <p>Click here to add a new Yoga Style</p>
                 </div>
             </div>
         )
