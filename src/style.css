@@ -13,6 +13,7 @@ code {
     monospace;
 }
 
+
 .App-header {
   min-width: 500px;
   min-height: 100vh;
@@ -41,6 +42,10 @@ code {
   display: flex;
 }
 
+.visible {
+  background: white;
+  color: black;
+}
 .yogalist {
   height: 100%;
   display: flex;
