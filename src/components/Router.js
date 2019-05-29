@@ -15,7 +15,6 @@ class App extends Component {
 
   componentDidMount(){
     this.authListener();
-    console.log(this.state.user)
   }
 
   authListener() {

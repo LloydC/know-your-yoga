@@ -38,14 +38,19 @@ code {
   color: #61dafb;
 }
 
+.Collapsible {
+  font-size: 18px;
+}
+
 .know-your-yoga {
   display: flex;
 }
 
-.visible {
+.yoga-visible {
   background: white;
   color: black;
 }
+
 .yogalist {
   height: 100%;
   display: flex;
