@@ -1,7 +1,7 @@
 import firebase from 'firebase'
 
 var firebaseConfig = {
-    apiKey: "AIzaSyB5eg8YDxlD0e_MSRqWLiWYQPXGoVkrHec",
+    apiKey: `${process.env.REACT_APP_apiKey}`,
     authDomain: "know-your-yoga.firebaseapp.com",
     databaseURL: "https://know-your-yoga.firebaseio.com",
     projectId: "know-your-yoga",
