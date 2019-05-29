@@ -50,7 +50,6 @@ class Profile extends Component {
                     <h1>Welcome to your profile {email}</h1>
                     <button onClick={this.logout} className="PageSwitcher__Item">Logout</button>
                     <br/>
-                    <p>Click here to add a new Yoga Style</p>
                     <br/>
                     <YogaForm/>
                 </div>

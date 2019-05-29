@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import fire from './firebase';
+import Collapsible from 'react-collapsible';
 
 class YogaForm extends Component {
     constructor(props) {
@@ -42,7 +42,7 @@ class YogaForm extends Component {
 
     render() {
         return (
-        <div className="FormCenter">
+        <Collapsible className="FormCenter" trigger="Click here to add a new yoga style">
             <form onSubmit={this.handleSubmit} className="FormFields">
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="name">Yoga Style Name</label>
@@ -64,7 +64,7 @@ class YogaForm extends Component {
                   <button onClick={this.addYogaStyle} className="FormField__Button mr-20">Add new Yoga style</button>
               </div>
             </form>
-          </div>
+        </Collapsible>
         );
     }
 }

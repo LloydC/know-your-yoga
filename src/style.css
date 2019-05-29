@@ -46,6 +46,11 @@ code {
   display: flex;
 }
 
+.invisible{
+  display: none;
+  color:red;
+}
+
 .yoga-visible {
   background: white;
   color: black;
