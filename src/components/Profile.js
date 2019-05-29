@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import fire from './firebase';
 import yogaStyles from './yoga-styles';
 import Yoga from "./Yoga";
+import YogaForm from "./YogaForm"
 
 class Profile extends Component {
     constructor(props){
@@ -50,6 +51,8 @@ class Profile extends Component {
                     <button onClick={this.logout} className="PageSwitcher__Item">Logout</button>
                     <br/>
                     <p>Click here to add a new Yoga Style</p>
+                    <br/>
+                    <YogaForm/>
                 </div>
             </div>
         )
