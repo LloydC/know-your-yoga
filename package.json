@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hapi/hapi": "^18.3.1",
+    "dotenv": "^8.0.0",
     "firebase": "^6.0.2",
     "react": "^16.8.6",
+    "react-collapsible": "^2.6.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "^3.0.0",
+    "webpack": "^4.29.6"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --env.API_URL=https://www.myapi.com --config webpack.config.build.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "webpack --env.API_URL=http://localhost:8000 --config webpack.config.dev.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.2"
   }
 }

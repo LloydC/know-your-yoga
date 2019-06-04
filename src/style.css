@@ -14,6 +14,7 @@ code {
     monospace;
 }
 
+
 .App-header {
   min-width: 500px;
   min-height: 100vh;
@@ -38,8 +39,22 @@ code {
   color: #61dafb;
 }
 
+.Collapsible {
+  font-size: 18px;
+}
+
 .know-your-yoga {
   display: flex;
+}
+
+.invisible{
+  display: none;
+  color:red;
+}
+
+.yoga-visible {
+  background: white;
+  color: black;
 }
 
 .yogalist {
@@ -49,14 +64,15 @@ code {
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: scroll;
-  /* flex-direction: column;
-  align-items: center; */
-  
 }
 
 .yoga {
   width: 200px;
+<<<<<<< HEAD
   height: 300px;
+=======
+  height: 250px;
+>>>>>>> 47b978c1e305124dd3d6a57444acd4136ae306a6
   overflow: scroll;
   text-align: center;
   /* border: 1px solid black; */
