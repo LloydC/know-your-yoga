@@ -3,8 +3,11 @@ import fire from './firebase';
 import yogaStyles from './yoga-styles';
 import Yoga from "./Yoga";
 import YogaForm from "./YogaForm"
-import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
 
+const Map = ReactMapboxGl({
+    accessToken: "pk.eyJ1IjoibGxveWQtY2hhbWJyaWVyIiwiYSI6ImNqcmh4NHd0ajJyZ3I0M24wZjJnOWVwZzgifQ.SaVzj9bmSvp4Zg7FhwC_Mg"
+  });
 
 class Profile extends Component {
     constructor(props){
@@ -22,11 +25,6 @@ class Profile extends Component {
     render(){
         var user = fire.auth().currentUser;
         var email;
-
-        const style = {
-            width: '25%',
-            height: '25%'
-          }
 
         if (user != null) {
             email = user.email;
@@ -47,16 +45,21 @@ class Profile extends Component {
                     <h1>Welcome to your profile {email}</h1>
                     <button onClick={this.logout} className="PageSwitcher__Item">Logout</button>
                     <YogaForm/>
-                    <Map google={this.props.google} zoom={14} style={style}>
-                        <Marker onClick={this.onMarkerClick}
-                                name={'Current location'} />
-                    </Map>
+                    <Map style="mapbox://styles/mapbox/streets-v9"
+                        containerStyle={{
+                            height: "400px",
+                            width: "500px"
+                        }}>
+                            <Layer
+                            type="symbol"
+                            id="marker"
+                            layout={{ "icon-image": "marker-15" }}>
+                            <Feature coordinates={[52.38, 4.91]}/>
+                            </Layer>
+                        </Map>
                 </div>
             </div>
         )
     }
 }
-
-export default GoogleApiWrapper({
-    apiKey: (`${process.env.REACT_APP_googleApiKey}`)
-  })(Profile)
+export default Profile;

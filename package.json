@@ -6,10 +6,11 @@
     "@hapi/hapi": "^18.3.1",
     "dotenv": "^8.0.0",
     "firebase": "^6.0.2",
-    "google-maps-react": "^2.0.2",
+    "mapbox-gl": "^1.0.0",
     "react": "^16.8.6",
     "react-collapsible": "^2.6.0",
     "react-dom": "^16.8.6",
+    "react-mapbox-gl": "^4.4.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.0.0",
     "webpack": "^4.29.6"
