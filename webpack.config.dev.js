@@ -5,6 +5,7 @@ const webpack = require('webpack'); // remember to require this, because we Defi
 // it will contain all the environment variables (that we set in package.json) as key/value pairs
 module.exports = (env) => {
   // create a nice object from the env variable
+ 
   const envKeys = Object.keys(env).reduce((prev, next) => {
     prev[`process.env.${next}`] = JSON.stringify(env[next]);
     return prev;

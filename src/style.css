@@ -68,14 +68,9 @@ code {
 
 .yoga {
   width: 200px;
-<<<<<<< HEAD
   height: 300px;
-=======
-  height: 250px;
->>>>>>> 47b978c1e305124dd3d6a57444acd4136ae306a6
   overflow: scroll;
   text-align: center;
-  /* border: 1px solid black; */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .yoga:hover {

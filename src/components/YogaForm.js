@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Collapsible from 'react-collapsible';
 
 class YogaForm extends Component {
@@ -44,6 +43,7 @@ class YogaForm extends Component {
         return (
         <Collapsible className="FormCenter" trigger="Click here to add a new yoga style">
             <form onSubmit={this.handleSubmit} className="FormFields">
+              <br/>
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="name">Yoga Style Name</label>
                 <input type="text" id="name" className="FormField__Input" placeholder="Enter style name" name="name" value={this.state.name} onChange={this.handleChange} />
