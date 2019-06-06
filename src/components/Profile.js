@@ -45,16 +45,15 @@ class Profile extends Component {
                     <h1>Welcome to your profile {email}</h1>
                     <button onClick={this.logout} className="PageSwitcher__Item">Logout</button>
                     <YogaForm/>
-                    <Map style="mapbox://styles/mapbox/streets-v9"
+                    <Map style="mapbox://styles/mapbox/streets-v11"
                         containerStyle={{
-                            height: "400px",
-                            width: "500px"
-                        }}>
+                            height: "200px",
+                            width: "200px"
+                        }} pitch={[9]} center={[4.899, 52.372]}>
                             <Layer
                             type="symbol"
                             id="marker"
                             layout={{ "icon-image": "marker-15" }}>
-                            <Feature coordinates={[52.38, 4.91]}/>
                             </Layer>
                         </Map>
                 </div>
