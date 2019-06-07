@@ -49,11 +49,19 @@ class Profile extends Component {
                         containerStyle={{
                             height: "200px",
                             width: "200px"
-                        }} pitch={[9]} center={[4.899, 52.372]}>
+                        }} pitch={[7]} center={[4.899, 52.372]}>
                             <Layer
                             type="symbol"
                             id="marker"
                             layout={{ "icon-image": "marker-15" }}>
+                            <Feature coordinates={[4.9151,52.3854]}/>
+                            <Feature coordinates={[4.8868,52.3861]}/>
+                            <Feature coordinates={[4.8782,52.3716]}/>
+                            <Feature coordinates={[4.8894,52.3815]}/>
+                            <Feature coordinates={[4.8863, 52.3853]}/>
+                            <Feature coordinates={[4.8909, 52.3770]}/>
+                            <Feature coordinates={[4.8557, 52.3672]}/>
+                            <Feature coordinates={[4.8521, 52.3582]}/>
                             </Layer>
                         </Map>
                 </div>
