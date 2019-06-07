@@ -41,7 +41,7 @@ class YogaForm extends Component {
 
     render() {
         return (
-        <Collapsible className="FormCenter" trigger="Click here to add a new yoga style">
+        <Collapsible className="FormCenter hvr-grow" trigger="Click here to add a new yoga style" >
             <form onSubmit={this.handleSubmit} className="FormFields">
               <br/>
               <div className="FormField">
