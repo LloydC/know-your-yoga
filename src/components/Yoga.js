@@ -7,7 +7,6 @@ class Yoga extends React.Component {
 
     Toggle = ()=> {
         this.setState({on: !this.state.on})
-        console.log('test')
     }
     render(){
         const { name, description, benefits, image } = this.props.details;

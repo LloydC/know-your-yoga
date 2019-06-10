@@ -3,7 +3,7 @@ import fire from './firebase';
 import yogaStyles from './yoga-styles';
 import Yoga from "./Yoga";
 import YogaForm from "./YogaForm"
-import ReactMapboxGl, { Layer, Feature, Marker } from "react-mapbox-gl";
+import ReactMapboxGl, { Layer, Feature, Marker, Popup } from "react-mapbox-gl";
 import logo from '../assets/yoga.png'
 
 const Map = ReactMapboxGl({
@@ -25,7 +25,7 @@ class Profile extends Component {
     }
     renderMarker(){
         // target the Layer component and inject a Feature component with the right coordinates
-        console.log(this.layerRef)
+        alert('hey')
     }
     render(){
         var user = fire.auth().currentUser;
@@ -41,7 +41,7 @@ class Profile extends Component {
                         <h1 onClick={this.renderMarker}>Know Your Yoga</h1>
                         <ul className="yogalist">                    
                             {Object.keys(this.state.yoga_list).map(key => 
-                                <Yoga key={key} index={key} details={this.state.yoga_list[key]} onClick={this.renderMarker}/>
+                                <Yoga key={key} index={key} details={this.state.yoga_list[key]}/>
                             )}
                         </ul>
                 </header>
@@ -55,7 +55,7 @@ class Profile extends Component {
                             height: "220px",
                             width: "220px"
                         }} center={[4.899, 52.372]} zoom={[10.5]}>
-                            <Marker coordinates={[4.9151, 52.3854]} anchor="center">
+                            <Marker coordinates={[4.9151, 52.3854]} anchor="center" onClick={this.renderMarker}>
                                     <img src={logo} alt="logo" width="10px" height="10px"/>
                             </Marker>
                             <Marker coordinates={[4.8868,52.3861]} anchor="center">
