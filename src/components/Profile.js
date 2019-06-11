@@ -41,7 +41,7 @@ class Profile extends Component {
                         <h1 onClick={this.renderMarker}>Know Your Yoga</h1>
                         <ul className="yogalist">                    
                             {Object.keys(this.state.yoga_list).map(key => 
-                                <Yoga key={key} index={key} details={this.state.yoga_list[key]}/>
+                                <Yoga key={key} index={key} details={this.state.yoga_list[key]} renderMarker={this.renderMarker}/>
                             )}
                         </ul>
                 </header>

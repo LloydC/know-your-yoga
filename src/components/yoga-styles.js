@@ -5,12 +5,6 @@ const yogaStyles = {
         benefits: "80% physical, 20% spiritual",
         image: "/images/aerial-yoga.jpg"
     },
-    yoga1: {
-        name: "Aqua Yoga",
-        description: "Very soft and therapeutic. It is practiced in the pool. He puts special emphasis on breathing and alignment. When performed in water, the body loses weight, which substantially reduces the risk of injury.It facilitates deep stretches and a satisfactory state of relaxation",
-        benefits: "50% physical, 50% spiritual",
-        image: "/images/aqua-yoga.jpg"
-    },
     yoga2: {
         name: "Ashtanga Yoga",
         description: "It is a dynamic yoga that provides flexibility and aerobic exercise thanks to a system of synchronized movements and breathing, called vinyasa, which link one position with another.",
