@@ -9,8 +9,10 @@ export default class StudioInfo extends PureComponent {
 
     return (
         <div>
-          {displayName} |{' '}
-          {displayAddress}|{' '}
+          <span style={{color: 'black'}}>{displayName} |{' '}</span>
+          <br/>
+          <span style={{color: 'black'}}>{displayAddress}|{' '}</span>
+          <br/>
           <a target="_new" href={`${signupLink}`}>Sign up link</a>
         </div>
 
