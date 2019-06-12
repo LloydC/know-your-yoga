@@ -19,7 +19,7 @@ class Map extends Component {
       height: 200,
       latitude: 52.372,
       longitude: 4.899,
-      zoom: 12,
+      zoom: 11,
       bearing: 0,
       pitch: 0
     }
