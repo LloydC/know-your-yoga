@@ -17,7 +17,7 @@ class Yoga extends Component {
                 <img src={image} alt="yoga pic" width="100px" height="100px" onClick={this.props.renderMarker}></img>
                 <br></br>
                 {this.state.on && <><span>{benefits}</span><p>{description}</p></>}
-                {this.state.on === false ? <Button variant="info" onClick={this.Toggle}>Click here for more information</Button> : <Button variant="info" onClick={this.Toggle}>Click here for less information</Button> }
+                {this.state.on === false ? <Button variant="info" onClick={this.Toggle}>Click here for more information</Button> : <Button variant="outline-info" onClick={this.Toggle}>Click here for less information</Button> }
             </div>
         
         )
