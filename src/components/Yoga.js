@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Button from 'react-bootstrap/Button';
 
 class Yoga extends Component {
     state = {
@@ -16,7 +17,8 @@ class Yoga extends Component {
                 <img src={image} alt="yoga pic" width="100px" height="100px" onClick={this.props.renderMarker}></img>
                 <br></br>
                 {this.state.on && <><span>{benefits}</span><p>{description}</p></>}
-                <button onClick={this.Toggle}>Click here for more information</button>
+                {/* <button onClick={this.Toggle}>Click here for more information</button> */}
+                <Button variant="info" onClick={this.Toggle}>Click here for more information</Button>
             </div>
         
         )

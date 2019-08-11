@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@hapi/hapi": "^18.3.1",
+    "bootstrap": "^4.3.1",
     "dotenv": "^8.0.0",
     "firebase": "^6.0.2",
     "mapbox-gl": "^1.0.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.11",
     "react-collapsible": "^2.6.0",
     "react-dom": "^16.8.6",
     "react-map-gl": "^5.0.3",
