@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import fire from './firebase';
+import fire from '../utils/firebase';
 
 class SignInForm extends Component {
     constructor() {

@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import { Route, NavLink } from 'react-router-dom';
+import Header from '../components/Header'
 import SignUpForm from './SignUpForm';
-import SignInForm from './SignInForm'
-import logo from '../assets/yoga.png'
+import SignInForm from './SignInForm';
+import NotFound from './NotFound';
 
 class Home extends Component {
     render(){
         return (
             <div className="App">
-              <div className="App__Aside">
-                <header className="App-header">
-                        <h1>Know Your Yoga</h1>
-                        <img src={logo} className="App-logo" alt="logo" />
-                        <span>Curious about Yoga types? Join us and find your answers </span>
-                </header>
-              </div>
+              <Header/>
               <div className="App__Form">
                 <div className="PageSwitcher">
                     <NavLink to="/sign-in" activeClassName="PageSwitcher__Item--Active" className="PageSwitcher__Item">Sign In</NavLink>

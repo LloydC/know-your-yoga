@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import fire from './firebase';
-import yogaStyles from './yoga-styles';
-import Yoga from "./Yoga";
-import YogaForm from "./YogaForm";
-import Map from './Map';
+import fire from '../utils/firebase';
+import yogaStyles from '../data/yoga-styles';
+import Yoga from "../components/Yoga";
+import YogaForm from "../components/YogaForm";
+import Map from '../components/Map';
 
 class Profile extends Component {
     constructor(props){

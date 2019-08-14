@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {HashRouter as Router} from 'react-router-dom';
-import Profile from './Profile';
-import Home from './Home';
-import fire from './firebase';
+import Profile from '../pages/Profile';
+import Home from '../pages/Home';
+import fire from '../utils/firebase';
 import '../style.css';
 
 class App extends Component {
