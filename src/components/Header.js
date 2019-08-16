@@ -1,6 +1,5 @@
 import React from "react";
-import logo from '../assets/yoga.png'
-
+import logo from '../assets/yoga-icons/color/png/152/yin_yang.png'
 const Header = () => {
     return (
         <div className="App__Aside">
