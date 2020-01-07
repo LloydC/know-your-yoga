@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hapi/hapi": "^18.3.1",
+    "@hapi/hapi": "^18.4.0",
     "bootstrap": "^4.3.1",
     "dotenv": "^8.0.0",
     "firebase": "^6.0.2",
@@ -15,7 +15,7 @@
     "react-map-gl": "^5.0.3",
     "react-mapbox-gl": "^4.4.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.0.0",
+    "react-scripts": "^3.3.0",
     "webpack": "^4.29.6"
   },
   "scripts": {
