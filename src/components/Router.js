@@ -1,21 +1,20 @@
 import React, {Component} from 'react';
 import {HashRouter as Router} from 'react-router-dom';
-import Profile from '../pages/Profile';
-import Home from '../pages/Home';
-import fire from '../utils/firebase';
+import Profile from './Profile';
+import Home from './Home';
+import fire from './firebase';
 import '../style.css';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      user: this.authListener()
+      user: {}
     }
-    this.authListener = this.authListener.bind(this)
   }
 
   componentDidMount(){
-    // this.authListener();
+    this.authListener();
   }
 
   authListener(){
@@ -31,8 +30,8 @@ class App extends Component {
 
   render() {
     return (
-      <Router exact path="/">
-        {this.state.user ? <Profile/> : <Home/>}
+      <Router>
+        {(this.state.user !== null) ? <Profile/> : <Home/>}
       </Router>
     );
   }
