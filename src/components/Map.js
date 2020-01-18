@@ -25,12 +25,12 @@ class Map extends Component {
     }
   };
 
-  _onViewportChange = viewport => {
-    if (viewport.longitude > 0) {
-        viewport.longitude = 4.899;
-    }
-    this.setState({viewport});
-  }
+  // _onViewportChange = viewport => {
+  //   if (viewport.longitude > 0) {
+  //       viewport.longitude = 4.899;
+  //   }
+  //   this.setState({viewport});
+  // }
 
   _renderStudioMarker = (studio, index) => {
     return (
@@ -61,16 +61,13 @@ class Map extends Component {
 
   render() {
     return (
-      <div>
         <ReactMapGL {...this.state.viewport} mapboxApiAccessToken={process.env.REACT_APP_TOKEN} mapStyle="mapbox://styles/mapbox/dark-v9" onViewportChange={viewport => this.setState({viewport})}>
         {STUDIOS.map(this._renderStudioMarker)}
         {this._renderPopup()}
         <div style={navStyle}>
           <NavigationControl />
         </div>
-      </ReactMapGL>
-      </div>
-      
+      </ReactMapGL> 
     );
   }
 }

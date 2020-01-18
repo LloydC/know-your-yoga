@@ -19,12 +19,8 @@ class Profile extends Component {
     }
 
     render(){
-        var user = fire.auth().currentUser;
-        var email;
-
-        if (user != null) {
-            email = user.email;
-        }
+        const user = fire.auth().currentUser;
+   
         return(
             <div className="Profile">
                 <div className="Profile_Yoga_List">
@@ -40,7 +36,7 @@ class Profile extends Component {
                     </header>
                 </div>
                 <div className="Profile_Side">
-                     <h1>Welcome to your profile {email}</h1>
+                     <h1>Welcome to your profile {user.email}</h1>
                         <button onClick={this.logout} className="PageSwitcher__Item">Logout</button>
                          <Map/>
                         <YogaForm/> 

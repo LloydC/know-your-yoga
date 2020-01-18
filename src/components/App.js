@@ -9,7 +9,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      user: this.authListener()
+      user: this.authListener(),
+      userCheck: false
     }
     this.authListener = this.authListener.bind(this)
   }
@@ -21,15 +22,18 @@ class App extends Component {
   authListener(){
     fire.auth().onAuthStateChanged(user => {
       if(user){
-        this.setState({ user });
+        this.setState({ user, userCheck:true });
       }
       else {
-        this.setState({ user: null})
+        this.setState({ user: null, userCheck: true})
       }
     })
   }
 
   render() {
+    if(!this.state.userCheck){
+      return null;
+    }
     return (
       <Router exact path="/">
         {this.state.user ? <Profile/> : <Home/>}
