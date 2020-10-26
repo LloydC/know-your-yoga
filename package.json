@@ -6,7 +6,7 @@
     "@hapi/hapi": "20.0.1",
     "bootstrap": "4.5.3",
     "dotenv": "8.2.0",
-    "firebase": "7.17.1",
+    "firebase": "8.0.0",
     "mapbox-gl": "1.12.0",
     "react": "16.13.1",
     "react-bootstrap": "1.4.0",
