@@ -15,7 +15,6 @@ code {
 }
 
 .App-header {
-  min-width: 500px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -128,20 +127,16 @@ code {
 
 /*Form Code */
 .App {
-  width: 100%;
-  height: 100vh;
-  display: flex;
   color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .Profile {
   width: 100%;
   display: flex;
   color: white;
-}
-
-.App__Aside {
-  width: 50%;
 }
 
 .Profile_Yoga_list {
@@ -161,10 +156,9 @@ code {
 }
 
 .App__Form {
-  width: 50%;
+  min-height: 100vh;
   background-color: #2E4158;
   padding: 25px 40px;
-  overflow: auto;
 }
 
 .Profile_Side {
@@ -278,6 +272,7 @@ code {
   padding: 15px 70px;
   font-size: .8em;
   font-weight: 500;
+  margin-right: 20px;
 }
 
 .FormField__Link {
@@ -305,4 +300,23 @@ code {
   display: inline-block;
   padding-bottom: 2px;
   margin-left: 5px;
+}
+
+@media only screen and (min-width: 900px) {
+  .App {
+    height: 100vh;
+    flex-direction: row;
+  }
+
+  .App__Form {
+    width: 50%;
+  }
+
+  .App__Aside {
+    width: 50%;
+  }
+
+  .App__Form {
+    overflow: auto;
+  }
 }
