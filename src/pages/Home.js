@@ -8,9 +8,8 @@ class Home extends Component {
   render() {
     return (
         <div className="App">
-            <div className="Container">
-                <Header />
-                <div className="App__Form">
+            <Header />
+            <div className="App__Form">
                 <div className="PageSwitcher">
                     <NavLink
                     to="/sign-in"
@@ -48,7 +47,6 @@ class Home extends Component {
                 </div>
                 <Route exact path="/" component={SignUpForm}></Route>
                 <Route path="/sign-in" component={SignInForm}></Route>
-                </div>
             </div>
         </div>
     );
