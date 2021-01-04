@@ -6,7 +6,7 @@
     "@hapi/hapi": "20.0.2",
     "bootstrap": "4.5.3",
     "dotenv": "8.2.0",
-    "firebase": "8.0.1",
+    "firebase": "8.2.1",
     "mapbox-gl": "1.13.0",
     "react": "17.0.1",
     "react-bootstrap": "1.4.0",
@@ -15,7 +15,7 @@
     "react-map-gl": "5.2.10",
     "react-mapbox-gl": "5.0.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.0"
+    "react-scripts": "4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "webpack-cli": "4.2.0"
+    "webpack-cli": "4.3.1"
   }
 }
