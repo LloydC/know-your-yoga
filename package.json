@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@hapi/hapi": "20.0.3",
-    "bootstrap": "4.5.3",
+    "bootstrap": "4.6.0",
     "dotenv": "8.2.0",
     "firebase": "8.2.3",
     "mapbox-gl": "2.0.1",
