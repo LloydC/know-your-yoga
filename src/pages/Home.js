@@ -3,7 +3,6 @@ import { Route, NavLink } from 'react-router-dom';
 import Header from '../components/Header'
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
-import NotFound from './NotFound';
 
 class Home extends Component {
     render(){

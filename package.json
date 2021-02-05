@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^18.4.1",
     "bootstrap": "^4.3.1",
     "dotenv": "^8.0.0",
-    "firebase": "^6.0.2",
+    "firebase": "^7.14.2",
     "mapbox-gl": "^1.0.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.11",
@@ -15,8 +15,8 @@
     "react-map-gl": "^5.0.3",
     "react-mapbox-gl": "^4.4.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.3.0",
-    "webpack": "^4.29.6"
+    "react-scripts": "^3.4.1",
+    "webpack": "^4.41.5"
   },
   "scripts": {
     "start": "react-scripts start",
