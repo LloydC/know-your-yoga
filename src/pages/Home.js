@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 import React, { Component } from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import Header from '../components/Header'
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
-=======
-import React, { Component } from "react";
-import { Route, NavLink } from "react-router-dom";
-import Header from "../components/HeaderComponent/Header";
-import SignUpForm from "./SignUpForm";
-import SignInForm from "./SignInForm";
->>>>>>> 98be356e2b8c9fe21ed217bbff4e79c848982667
 
 class Home extends Component {
   render() {
