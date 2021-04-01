@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, NavLink } from 'react-router-dom';
-import Header from '../components/Header'
+import Header from '../components/HeaderComponent/Header'
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
 
@@ -16,7 +16,7 @@ class Home extends Component {
                     activeClassName="PageSwitcher__Item--Active"
                     className="PageSwitcher__Item"
                     >
-                    Sign In
+                    Log In
                     </NavLink>
                     <NavLink
                     exact
@@ -33,7 +33,7 @@ class Home extends Component {
                     activeClassName="FormTitle__Link--Active"
                     className="FormTitle__Link"
                     >
-                    Sign In
+                    Log In
                     </NavLink>
                     or
                     <NavLink
