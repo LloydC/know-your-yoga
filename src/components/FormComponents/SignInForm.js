@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import fire from '../utils/firebase';
+import fire from './firebase';
 
-class SignUpForm extends Component {
-    constructor(props) {
-        super(props);
+class SignInForm extends Component {
+    constructor() {
+        super();
 
         this.state = {
             email: '',
-            password: '',
-            name: '',
-            hasAgreed: false
+            password: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.signup = this.signup.bind(this);
+        this.login = this.login.bind(this)
     }
 
     handleChange(e) {
@@ -30,12 +28,12 @@ class SignUpForm extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        console.log(`Form data ${this.state}`);
+        console.log(`Form data ${JSON.stringify(this.state)}`);
     }
 
-    signup(e){
+    login(e){
       e.preventDefault();
-      fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+      fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
       .then( u => console.log(u))
       .catch(err => console.error(err))
     }
@@ -43,31 +41,24 @@ class SignUpForm extends Component {
     render() {
         return (
         <div className="FormCenter">
-            <form onSubmit={this.handleSubmit} className="FormFields">
-              <div className="FormField">
-                <label className="FormField__Label" htmlFor="name">Full Name</label>
-                <input type="text" id="name" className="FormField__Input" placeholder="Enter your full name" name="name" value={this.state.name} onChange={this.handleChange} />
-              </div>
-              <div className="FormField">
+            <form onSubmit={this.login} className="FormFields">
+            <div className="FormField">
                 <label className="FormField__Label" htmlFor="email">E-Mail Address</label>
                 <input type="email" id="email" className="FormField__Input" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
               </div>
+
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="password">Password</label>
                 <input type="password" id="password" className="FormField__Input" placeholder="Enter your password" name="password" value={this.state.password} onChange={this.handleChange} />
               </div>
+
               <div className="FormField">
-                <label className="FormField__CheckboxLabel">
-                    <input className="FormField__Checkbox" type="checkbox" name="hasAgreed" value={this.state.hasAgreed} onChange={this.handleChange} /> I agree all statements in terms of service
-                </label>
-              </div>
-              <div className="FormField">
-                  <button onClick={this.signup} className="FormField__Button mr-20">Sign Up</button> 
-                  <Link to="/sign-in" className="FormField__Link">I'm already a member</Link>
+                  <button className="FormField__Button mr-20">Sign In</button> <Link to="/" className="FormField__Link">Create an account</Link>
               </div>
             </form>
           </div>
         );
     }
 }
-export default SignUpForm;
+
+export default SignInForm;

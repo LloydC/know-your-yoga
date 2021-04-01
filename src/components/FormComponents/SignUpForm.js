@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import fire from '../utils/firebase';
+import fire from './firebase';
 
 class SignUpForm extends Component {
     constructor(props) {
@@ -62,8 +62,7 @@ class SignUpForm extends Component {
                 </label>
               </div>
               <div className="FormField">
-                  <button onClick={this.signup} className="FormField__Button mr-20">Sign Up</button> 
-                  <Link to="/sign-in" className="FormField__Link">I'm already a member</Link>
+                  <button onClick={this.signup} className="FormField__Button mr-20">Sign Up</button> <Link to="/sign-in" className="FormField__Link">I'm already member</Link>
               </div>
             </form>
           </div>
