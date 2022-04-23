@@ -1,11 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './assets/styles/style.css';
 
 require('dotenv').config()
-
-ReactDOM.render( < App / > , document.getElementById('root'));
+let container = document.getElementById('root');
+let root = createRoot(container);
+root.render( < App / > );
 
 serviceWorker.unregister();
