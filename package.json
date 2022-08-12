@@ -9,7 +9,7 @@
     "firebase": "9.9.2",
     "mapbox-gl": "2.9.2",
     "react": "18.2.0",
-    "react-bootstrap": "2.4.0",
+    "react-bootstrap": "2.5.0",
     "react-collapsible": "2.10.0",
     "react-dom": "18.2.0",
     "react-map-gl": "7.0.18",
