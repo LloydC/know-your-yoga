@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hapi/hapi": "21.1.0",
+    "@hapi/hapi": "21.2.0",
     "bootstrap": "5.2.3",
     "dotenv": "16.0.3",
     "firebase": "9.15.0",
