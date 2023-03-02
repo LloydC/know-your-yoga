@@ -2,10 +2,12 @@ import React, {
   Component
 } from 'react';
 import {
-  HashRouter as Router
+  Routes, Route
 } from 'react-router-dom';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
+import SignUpForm from './components/SignUpForm';
+import SignInForm from './components/SignInForm';
 import fire from './utils/firebase';
 import './assets/styles/style.css';
 
@@ -41,11 +43,12 @@ class App extends Component {
     if (!this.state.userCheck) {
       return null;
     }
-    return ( <
-      Router exact path = "/" > {
-        this.state.user ? < Profile / > : < Home / >
-      } <
-      /Router>
+    return ( 
+              <Routes>
+                <Route path="/" element={this.state.user ? <Profile / > : <Home user={this.state.user} / >} />
+                <Route path="/sign-up" element={<SignUpForm />}></Route>
+                <Route path="/sign-in" element={<SignInForm />}></Route>
+              </Routes>
     );
   }
 }

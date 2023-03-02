@@ -1,52 +1,55 @@
 import React, { Component } from 'react';
-import { Route, NavLink } from 'react-router-dom';
 import Header from '../components/HeaderComponent/Header'
-import SignUpForm from './SignUpForm';
-import SignInForm from './SignInForm';
+import SignUpForm from '../components/SignUpForm';
+import LoginForm from '../components/SignInForm';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          form: 'signup',
+        }
+      }
   render() {
     return (
         <div className="App">
             <Header />
             <div className="App__Form">
                 <div className="PageSwitcher">
-                    <NavLink
-                    to="/sign-in"
+                    <span
                     activeClassName="PageSwitcher__Item--Active"
                     className="PageSwitcher__Item"
+                    onClick={()=> this.setState({form: 'login'})}
                     >
                     Log In
-                    </NavLink>
-                    <NavLink
-                    exact
-                    to="/"
+                    </span>
+                    <span
                     activeClassName="PageSwitcher__Item--Active"
                     className="PageSwitcher__Item"
+                    onClick={()=> this.setState({form: 'signup'})}
                     >
                     Sign Up
-                    </NavLink>
+                    </span>
                 </div>
                 <div className="FormTitle">
-                    <NavLink
-                    to="/sign-in"
+                    <span
                     activeClassName="FormTitle__Link--Active"
                     className="FormTitle__Link"
+                    onClick={()=> this.setState({form: 'login'})}
                     >
                     Log In
-                    </NavLink>
+                    </span>
                     or
-                    <NavLink
-                    exact
-                    to="/"
+                    <span
                     activeClassName="FormTitle__Link--Active "
                     className="FormTitle__Link "
+                    onClick={()=> this.setState({form: 'signup'})}
                     >
                     Sign Up
-                    </NavLink>
+                    </span>
                 </div>
-                <Route exact path="/" component={SignUpForm}></Route>
-                <Route path="/sign-in" component={SignInForm}></Route>
+                {this.state.form === 'signup' && <SignUpForm />}
+                {this.state.form === 'login' && <LoginForm />}
             </div>
         </div>
     );
