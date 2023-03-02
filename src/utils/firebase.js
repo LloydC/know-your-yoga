@@ -1,6 +1,8 @@
-import firebase from 'firebase'
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 
-var firebaseConfig = {
+let firebaseConfig = {
     apiKey: `${process.env.REACT_APP_firebaseApiKey}`,
     authDomain: "know-your-yoga.firebaseapp.com",
     databaseURL: "https://know-your-yoga.firebaseio.com",
