@@ -18,7 +18,6 @@ const navStyle = {
 };
 
 class Map extends Component {
-
   state = {
     viewport: {
       width: '30vw',
@@ -103,8 +102,8 @@ class Map extends Component {
       ReactMapGL {
         ...this.state.viewport
       }
-      mapboxApiAccessToken = {
-        process.env.REACT_APP_TOKEN
+      mapboxAccessToken = {
+        process.env.REACT_APP_MAP_TOKEN
       }
       mapStyle = "mapbox://styles/mapbox/dark-v9"
       onViewportChange = {

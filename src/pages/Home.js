@@ -17,14 +17,12 @@ class Home extends Component {
             <div className="App__Form">
                 <div className="PageSwitcher">
                     <span
-                    activeClassName="PageSwitcher__Item--Active"
                     className="PageSwitcher__Item"
                     onClick={()=> this.setState({form: 'login'})}
                     >
                     Log In
                     </span>
                     <span
-                    activeClassName="PageSwitcher__Item--Active"
                     className="PageSwitcher__Item"
                     onClick={()=> this.setState({form: 'signup'})}
                     >
@@ -33,7 +31,6 @@ class Home extends Component {
                 </div>
                 <div className="FormTitle">
                     <span
-                    activeClassName="FormTitle__Link--Active"
                     className="FormTitle__Link"
                     onClick={()=> this.setState({form: 'login'})}
                     >
@@ -41,7 +38,6 @@ class Home extends Component {
                     </span>
                     or
                     <span
-                    activeClassName="FormTitle__Link--Active "
                     className="FormTitle__Link "
                     onClick={()=> this.setState({form: 'signup'})}
                     >
