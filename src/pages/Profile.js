@@ -6,6 +6,7 @@ import yogaStyles from '../data/yoga-styles';
 import Yoga from "../components/YogaComponent/Yoga";
 import YogaForm from "../components/FormComponents/YogaForm";
 import Map from '../components/MapComponent/Map';
+import defaultUserImg from '../assets/images/default-user.png'
 
 class Profile extends Component {
     constructor(props) {
@@ -52,6 +53,8 @@ class Profile extends Component {
                 </div> 
                 <div className="Profile_Side" >
                     <h1> Welcome {user.email} </h1> 
+                    <img src={defaultUserImg} alt={'user_image'} width={'100px'} height={'100px'} style={{borderRadius: '75%'}}/>
+                    <br />
                     <button onClick={this.logout} className="PageSwitcher__Item"> Logout </button> 
                     <div className='displayContainer'>
                         <button className='displayBtn' onClick={()=> this.setState({...this.state, displayContainer: this.state.displayContainer === 'yogaStyles' ? "yogaMap" : "yogaStyles"})}>{ this.state.displayContainer !== 'yogaStyles' ? "Display yoga styles" : "Display yoga map"}</button>
