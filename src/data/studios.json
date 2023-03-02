@@ -1,9 +1,9 @@
 [
-    {"studio":"Rasalila","address":"Tweede Kostverlorenkade 67,1053 SB Amsterdam","booking_URL":"https://www.rasa-lila.nl/lessen/aerial-lessen/aerial-yoga/","latitude":52.3665,"longitude":4.8623, "studioPicture":"../assets/images/mock-studio.jpg"},
-    {"studio":"Ashtanga Vinyasa Yoga Shala","address":"Levantplein 18, 1019 MK Amsterdam","booking_URL":"https://www.momoyoga.com/av-yogashala/","latitude":52.3765,"longitude":4.9418, "studioPicture":"../assets/images/mock-studio.jpg"},
-    {"studio":"Bikram Yoga Amsterdam","address":"Korte Prinsengracht 91 - Links, 1013 GR Amsterdam","booking_URL":"https://bikramyoga.nl/first-time","latitude":52.3812,"longitude":4.8894, "studioPicture":"../assets/images/mock-studio.jpg"},
-    {"studio":"Gold Link Kundalini Yoga","address":"Den Texstraat 46, 1017 ZC Amsterdam","booking_URL":"http://www.goldenlink.nl/content/?q=node/54","latitude":52.3587,"longitude":4.8954, "studioPicture":"../assets/images/mock-studio.jpg"},
-    {"studio":"De Nieuwe Yogaschool","address":"Laurierstraat 109,1016 PL Amsterdam","booking_URL":"https://denieuweyogaschool.nl/club_portal/lessons","latitude":52.3716,"longitude":4.8787, "studioPicture":"../assets/images/mock-studio.jpg"},
-    {"studio":"Svaha Yoga Jordaan Studio","address":"Willemsstraat 133, 1015 JB Amsterdam","booking_URL":"https://svahayoga.com/classes/","latitude":52.3809,"longitude":4.8828, "studioPicture":"../assets/images/mock-studio.jpg"},
-    {"studio":"Rumah Yoga","address":"Distelweg 74C, 1031 HH Amsterdam","booking_URL":"http://rumahyoga.nl/rooster/","latitude":52.3927,"longitude":4.9057}
+    {"studio":"Rasalila","address":"Tweede Kostverlorenkade 67,1053 SB Amsterdam","booking_URL":"https://www.rasa-lila.nl/lessen/aerial-lessen/aerial-yoga/","latitude":52.3665,"longitude":4.8623, "studioPicture":"./images/mock-studio.jpg"},
+    {"studio":"Ashtanga Vinyasa Yoga Shala","address":"Levantplein 18, 1019 MK Amsterdam","booking_URL":"https://www.momoyoga.com/av-yogashala/","latitude":52.3765,"longitude":4.9418, "studioPicture":"./images/mock-studio.jpg"},
+    {"studio":"Bikram Yoga Amsterdam","address":"Korte Prinsengracht 91 - Links, 1013 GR Amsterdam","booking_URL":"https://bikramyoga.nl/first-time","latitude":52.3812,"longitude":4.8894, "studioPicture":"./images/mock-studio.jpg"},
+    {"studio":"Gold Link Kundalini Yoga","address":"Den Texstraat 46, 1017 ZC Amsterdam","booking_URL":"http://www.goldenlink.nl/content/?q=node/54","latitude":52.3587,"longitude":4.8954, "studioPicture":"./images/mock-studio.jpg"},
+    {"studio":"De Nieuwe Yogaschool","address":"Laurierstraat 109,1016 PL Amsterdam","booking_URL":"https://denieuweyogaschool.nl/club_portal/lessons","latitude":52.3716,"longitude":4.8787, "studioPicture":"./images/mock-studio.jpg"},
+    {"studio":"Svaha Yoga Jordaan Studio","address":"Willemsstraat 133, 1015 JB Amsterdam","booking_URL":"https://svahayoga.com/classes/","latitude":52.3809,"longitude":4.8828, "studioPicture":"./images/mock-studio.jpg"},
+    {"studio":"Rumah Yoga","address":"Distelweg 74C, 1031 HH Amsterdam","booking_URL":"http://rumahyoga.nl/rooster/","latitude":52.3927,"longitude":4.9057, "studioPicture":"./images/mock-studio.jpg"}
   ]
