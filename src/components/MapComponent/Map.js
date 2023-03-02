@@ -20,8 +20,8 @@ const navStyle = {
 class Map extends Component {
   state = {
     viewport: {
-      width: '30vw',
-      height: '60vh',
+      width: '100vw',
+      height: '100vh',
       latitude: 52.372,
       longitude: 4.899,
       zoom: 11,

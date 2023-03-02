@@ -12,12 +12,11 @@ class Yoga extends Component {
     render(){
         const { name, description, benefits, image } = this.props.details;
         return (
-            <div className="yoga">
-                <h1>{name}</h1>
-                <img src={image} alt="yoga pic" width="100px" height="100px" onClick={this.props.renderMarker}></img>
-                <br></br>
+            <div className="yogaCard">
+                <img src={image} alt="yoga pic" width="100%" height="50%" onClick={this.props.renderMarker}></img>
+                <h3>{name}</h3>
                 {this.state.on && <><span>{benefits}</span><p>{description}</p></>}
-        <Button variant={this.state.on?"info":"outline-info"} onClick={this.Toggle}>{this.state.on? "Click here for less info": "Click here for more info"}</Button>
+                <Button variant={this.state.on?"info":"outline-info"} onClick={this.Toggle}>{this.state.on? "Hide Yoga style information": "Display Yoga style information"}</Button>
             </div>
         
         )

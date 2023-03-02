@@ -31,7 +31,7 @@ class Profile extends Component {
                     <h1 onClick= {this.renderMarker}> Know Your Yoga </h1> 
                     {this.state.displayContainer === 'yogaStyles' ? 
                     <div className="User_Info" >
-                        <ul className="yogalist" > 
+                        <ul className="yogaList" > 
                             {
                                 Object.keys(this.state.yoga_list).map(key =>
                                     <Yoga 
@@ -44,17 +44,19 @@ class Profile extends Component {
                             } 
                         </ul>  
                     </div> : 
-                    <Map /> 
+                    <div className='yogaMap'>
+                        <Map /> 
+                    </div>
                     }
                     </header> 
                 </div> 
-                <div className = "Profile_Side" >
-                    <h1> Welcome to your profile {user.email} </h1> 
-                    <div>
-                        <button onClick={()=> this.setState({...this.state, displayContainer: this.state.displayContainer === 'yogaStyles' ? "yogaMap" : "yogaStyles"})}>{ this.state.displayContainer !== 'yogaStyles' ? "Display yoga styles" : "Display yoga map"}</button>
-                        <button onClick ={this.logout} className = "PageSwitcher__Item" > Logout </button> 
+                <div className="Profile_Side" >
+                    <h1> Welcome {user.email} </h1> 
+                    <button onClick={this.logout} className="PageSwitcher__Item"> Logout </button> 
+                    <div className='displayContainer'>
+                        <button className='displayBtn' onClick={()=> this.setState({...this.state, displayContainer: this.state.displayContainer === 'yogaStyles' ? "yogaMap" : "yogaStyles"})}>{ this.state.displayContainer !== 'yogaStyles' ? "Display yoga styles" : "Display yoga map"}</button>
+                        <YogaForm />
                     </div>
-                    <YogaForm />
                 </div>   
             </div >
         )

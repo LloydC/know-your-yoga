@@ -38,6 +38,11 @@ code {
 
 .Collapsible {
   font-size: 18px;
+  text-align: center;
+}
+
+.Collapsible:hover {
+  cursor: pointer;
 }
 
 .hvr-grow {
@@ -71,7 +76,7 @@ code {
   color: black;
 }
 
-.yogalist {
+.yogaList {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -80,15 +85,22 @@ code {
   overflow: scroll;
 }
 
-.yoga {
-  width: 200px;
-  height: 300px;
+.yogaMap {
+  width: 50vw;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.yogaCard {
+  width: 20rem;
+  height: 16rem;
   overflow: scroll;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.2rem;
 }
 
-.yoga:hover {
+.yogaCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -144,7 +156,7 @@ code {
 }
 
 .Profile-header {
-  width: 80%;
+  width: 50vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -162,8 +174,10 @@ code {
 }
 
 .Profile_Side {
-  width: 50%;
+  width: 50vw;
   background-color: #2E4158;
+  padding-top: 3.5rem;
+  text-align: center;
 }
 
 .Profile_Side h1 {
@@ -207,9 +221,9 @@ code {
   border-bottom-right-radius: 25px;
 }
 
-.FormCenter {
+/* .FormCenter {
   margin-bottom: 100px;
-}
+} */
 
 .FormTitle {
   color: #707C8B;
@@ -300,6 +314,20 @@ code {
   display: inline-block;
   padding-bottom: 2px;
   margin-left: 5px;
+}
+
+
+
+.displayContainer {
+  width: inherit;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.displayBtn {
+  width: 16rem;
 }
 
 @media only screen and (min-width: 900px) {
