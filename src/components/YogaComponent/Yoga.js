@@ -14,9 +14,16 @@ class Yoga extends Component {
         return (
             <div className="yogaCard">
                 <img src={image} alt="yoga pic" width="100%" height="50%" onClick={this.props.renderMarker}></img>
-                <h3>{name}</h3>
-                {this.state.on && <><span>{benefits}</span><p>{description}</p></>}
-                <Button variant={this.state.on?"info":"outline-info"} onClick={this.Toggle}>{this.state.on? "Hide Yoga style information": "Display Yoga style information"}</Button>
+                <div style={{
+                    height: '50%',
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    justifyContent: 'space-evenly'
+                    }}>
+                    <h3>{name}</h3>
+                    <Button variant={this.state.on? "outline-info": "info"} onClick={this.Toggle}>{this.state.on? "Hide Yoga style information": "Display Yoga style information"}</Button>
+                    {this.state.on && <div><span>{benefits}</span><p>{description}</p></div>}
+                </div>
             </div>
         
         )
