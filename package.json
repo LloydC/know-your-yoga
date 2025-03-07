@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hapi/hapi": "21.3.12",
+    "@hapi/hapi": "21.4.0",
     "bootstrap": "5.3.3",
     "firebase": "^9.17.1",
     "mapbox-gl": "3.10.0",
