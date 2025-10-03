@@ -11,7 +11,7 @@
     "react-bootstrap": "2.10.10",
     "react-collapsible": "2.10.0",
     "react-dom": "18.3.1",
-    "react-map-gl": "7.1.9",
+    "react-map-gl": "8.1.0",
     "react-router-dom": "6.30.1",
     "react-scripts": "5.0.1"
   },
